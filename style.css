@@ -55,7 +55,7 @@
 }
 
 .intro-buttons {  
-    width: 500px;
+    width: auto;
     /*background-color: seagreen;*/
     margin: auto auto 50px;
 }
@@ -65,21 +65,46 @@
     height: 100px;
     border-radius: 50%;
     margin: 10px;
+    transition-duration: 0.4s;
 }
 
 .button-linkedin {
     border: 2px solid #0077B5;
 }
+.button-linkedin:hover {
+    background-color: #0077B5;
+    color: white;
+}
 
 .button-github {
     border: 2px solid #6cc644;
+}
+.button-github:hover {
+    background-color: #6cc644;
+    color: white;
+}
+
+.button-resume {
+    border: 2px solid #ff0000;
+}
+.button-resume:hover {
+    background-color: #ff0000;
+    color: white;
 }
 
 .button-facebook {
     border: 2px solid #3b5998;
 }
+.button-facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
 
 .button-instagram {
     border: 2px solid #bc2a8d;
+}
+.button-instagram:hover {
+    background-color: #bc2a8d;
+    color: white;
 }
 
