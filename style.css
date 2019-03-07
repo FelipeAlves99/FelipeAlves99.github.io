@@ -183,36 +183,65 @@ body {
 }
 
 .school-info {
-    width: 80%;
+    width: 100%;
     margin: 20px 50px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.school-text img {
-    width: 50%;
+.schools-img {
+    width: 100%;
+    margin-top: 30px;
 }
 
 .experience { /*placeholder*/
     width: 90vw;
-    height: 800px;
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
     border-top: 2px solid #3b5998;
+    padding: 2% 0 3%;
+}
+
+.experience-header {
+    width: 100%;
+    /*background-color: red;*/
+    height: 10%;
+    padding: 0 4% 2%;
+    text-align: center;
+}
+
+.experience-info{
+    width: 100%;
+    margin: 20px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experience-text{
+    max-width: 400px;
+}
+
+.experience-img {
+    width: 100%;
+    margin-top: 30px;
 }
 
 .portfolio { /*placeholder*/
     width: 90vw;
-    height: 800px;
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto;
     border-top: 2px solid #3b5998;
+    padding: 2% 0 3%;
 }
