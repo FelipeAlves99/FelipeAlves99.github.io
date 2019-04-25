@@ -18,7 +18,6 @@
                 <a href="#schooling">Schooling</a>
                 <a href="#experience">Experience</a>
                 <a href="#portfolio">Portfolio</a>
-            <!--<a href="#contact">Contact</a>-->
             </div>
         </div>
 
@@ -28,24 +27,27 @@
                     <p>Hi everyone,<br>I'm Felipe Alves.<br>
                         Back-end and<br>(wanna be)<br>Game Developer.</p>
                 </div>
-
                 <div class="intro-buttons">
-                    <button class="button-linkedin">LinkedIn</button>
-                    <button class="button-github">GitHub</button>
-                    <button class="button-resume">Resume</button>
-                    <button class="button-facebook">Facebook</button>
-                    <button class="button-instagram">Instagram</button>
+                    <button onclick="window.open('https://www.linkedin.com/in/felipe-alves-new-developer','_blank'); return false"  
+                    class="button-linkedin">LinkedIn</button>
+                    <button onclick="window.open('https://github.com/FelipeAlves99', '_blank'); return false" 
+                    class="button-github">GitHub</button>
+                    <button class="button-resume">Resume</button> 
+                    <button onclick="window.open('https://www.facebook.com/profile.php?id=100009480876434', '_blank'); return false" 
+                    class="button-facebook">Facebook</button>
+                    <button onclick="window.open('https://www.instagram.com/fe.alves99/?hl=pt-br', '_blank'); return false"
+                    class="button-instagram">Instagram</button>
                 </div>
             </div>
 
-            <div class="aboutme" id="aboutme">
-                <div class="aboutme-header" >
+            <div class="aboutme" >
+                <div class="aboutme-header" id="aboutme">
                     <h1>About Myself</h1>
                 </div>
 
-                <div class="something-else">
+               <!-- <div class="something-else">
                     placeholder
-                </div>
+                </div>-->
 
                 <div class="about-text">
 
@@ -79,35 +81,32 @@
                 </div>
                 
                 <div class="school-info">
-                    <div>
+                    <div class="school-text">
                         <h4>PBF</h4>
                         <p>English Course</p>
                         <p>2011 (Jan) - 2016 (Dec)</p>
+                        <img src="\images\pbf-logo.png">
                     </div>
-                    <div>
+                    <div class="school-text">
                         <h4>Etec Fernando Prestes</h4>
-                        <p>computer technician</p>
+                        <p>Computer Technician</p>
                         <p>2015 (Ago) - 2016 (Dec)</p>
-                        <!-- <img src="\images\etec-logo.jpg"> -->
+                        <img src="\images\etec-logo.png">
                     </div>
-                    <div>
+                    <div class="school-text">
                         <h4>Universidade Paulista</h4>
                         <p>Computer Science</p>
                         <p>2018 (Jan) - Today</p>
-                        <!--<img src="\images\unip-logo.png"> -->
+                        <img src="\images\unip-logo.png">
                     </div>
-                    <div>
+                    <div class="school-text">
                         <h4>Udemy</h4>
                         <p>Web development and Javascript programming</p>
                         <p>72 hours course</p>
+                        <img src="\images\udemy-logo-2.png">
                     </div>
 
-                    <div class="schools-img">
-                        <img src="\images\pbf-logo.png">
-                        <img src="\images\etec-logo.png">
-                        <img src="\images\unip-logo.png">
-                        <img src="\images\udemy-logo.png">
-                    </div>
+                    
                 </div>
             </div>
 
@@ -161,19 +160,35 @@
 
             <div class="portfolio" id="portfolio">
                 <div class="portfolio-header">
-
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="portfolio-body">
+                    PLACEHOLDER
                 </div>
             </div>
-
-        <!--<div class="contact" id="contact">
-                <div class="contact-header">
-
-                </div>
-            </div>-->
         </div>
 
         <div class="footer">
+            <div class="footer-contact">
+                <h2>Contact me!</h2>
+                <h4>E-mail:</h4>
+                <p>falves99.dev@gmail.com | f.alves99@hotmail.com</p>
+                <br>
+                <h4>Phone:</h4> 
+                <p>+55 15 99732-9697</p>
+                <br>
+                <h4>Living at:</h4>
+                <p>Sorocaba - São Paulo - Brazil</p>
 
+            </div>
+
+            <div class="footer-credit">
+                <h4>All the design and code was made by Felipe Alves.</h4>
+                <br>
+                <h4>And some special thanks to <a href="https://github.com/elainemattos" target="_blank">Elaine Mattos</a> for her help.</h4>
+            </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

@@ -2,6 +2,8 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    transition: 0.3s;
 }
 
 body {
@@ -17,9 +19,9 @@ body {
     position: sticky; 
     top: 0px;
     width: 100vw;
-    height: 5vw;
-    min-height: 75px;
-    margin: 0 auto;
+    height: 85px;
+    transition: top 0.3s;
+    /*margin: 0 auto;*/
     background-color: white;
     display: flex;
     justify-content: center;
@@ -30,21 +32,19 @@ body {
 }
 
 .header div a {
-    font-size: 1.5vw;
+    font-size: 25px;;
     color: inherit;
     text-decoration:none;  
 }
 
 .name {
-    /*background-color: rebeccapurple;*/
     margin-left: 15vw;
 }
 
 .page-links {
     width: auto;
     margin-left: auto;
-    margin-right: 20vw;
-    /*background-color: red;*/
+    margin-right: 15vw;
 }
 
 .page-links a {
@@ -57,30 +57,29 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    min-height: 85vh;
-    margin: 0 auto 2vh;
+    height: 85vh;
+    margin: 0 auto 20px;
 }
 
 .intro-text {
-    width: 90vw;
-    margin: 10% auto 100px;
-    font-size: 3vw;
+    margin: 140px auto auto;
+    font-size: 60px;
     text-align: center;
 }
 
 .intro-buttons {  
     width: auto;
-    /*background-color: seagreen;*/
-    margin: auto auto 100px;
+    margin: 70px auto auto;
 }
 
 .intro-buttons button {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin: 10px;
     transition-duration: 0.4s;
     background-color: white;
+    outline: none;
 }
 
 .button-linkedin {
@@ -124,14 +123,11 @@ body {
 }
 
 .aboutme{
-    /*background-color: red;*/
     width: 90vw;
-    /*height: auto;*/
     justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    /*flex-direction: row;*/
     margin: 0 auto;
     padding: 2% 0 3%;
     border-top: 2px solid #3b5998;
@@ -194,7 +190,7 @@ body {
     margin: 20px auto 0;
 }
 
-.schools-img {
+/*.schools-img {
     width: 100%;
     max-height: 10%;
     margin-top: 30px;
@@ -202,6 +198,13 @@ body {
 
 .schools-img img {
     height: 10vh;
+}*/
+
+.school-text img{
+    max-width: 180px;
+}
+.school-text {
+    max-width: 200px;
 }
 
 .experience {
@@ -256,4 +259,83 @@ body {
     margin: 0 auto;
     border-top: 2px solid #3b5998;
     padding: 2% 0 3%;
+}
+
+.portfolio-header{
+    width: 100%;
+    height: 10%;
+    padding: 0 4% 2%;
+    text-align: center; 
+}
+
+.portfolio-body{
+    height: 500px;
+    width: 90vw;
+}
+
+.footer{
+    width: 100vw;
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 
+    rgba(0, 0, 0, 0.2), 0 
+    6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-credit{
+    text-align: center;
+    width: 300px;  
+    margin-top: 20px;
+}
+
+.footer-contact {
+    text-align: center;
+    max-width: 300px;  
+}
+
+@media only screen and (max-width: 1100px) {
+    .header div a {
+        font-size: 20px; 
+    }
+
+    .intro-text {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .header div a {
+        font-size: 15px; 
+    }
+
+    .intro-text {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header div a { /* will change */
+        font-size: 10px; 
+    }
+
+    .intro-text {
+        margin: 100px auto auto;
+        font-size: 35px;
+    }
+
+    .intro-buttons {  
+        margin: auto 0;
+    }
+    
+    .intro-buttons button {
+        width: 100vw;
+        height: auto;
+        border-radius: 0;
+        padding: 10px;
+        border: 0px;
+        margin: 0 auto;
+    }
 }
