@@ -4,6 +4,7 @@
     padding: 0;
     scroll-behavior: smooth;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 
 body {
@@ -57,13 +58,22 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 85vh;
+    min-height: 85vh;
+    max-height: 800px;
     margin: 0 auto 20px;
+    background: url('/images/Imagem1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
 }
 
 .intro-text {
     margin: 140px auto auto;
     font-size: 60px;
+    text-shadow: 4px 4px 8px #000;
+    /*color: #6cc644;*/
+    color: #FFF;
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
     text-align: center;
 }
 
@@ -77,49 +87,65 @@ body {
     height: 80px;
     border-radius: 50%;
     margin: 10px;
-    transition-duration: 0.4s;
     background-color: white;
     outline: none;
+    transition: 0.2s;
+    
 }
 
-.button-linkedin {
+#button-linkedin {
+    background: url('/images/linkedin-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+}
+#button-linkedin:hover {
     border: 2px solid #0077B5;
 }
-.button-linkedin:hover {
-    background-color: #0077B5;
-    color: white;
-}
 
-.button-github {
+#button-github {
+    background: url('/images/github-icons.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+}
+#button-github:hover {
     border: 2px solid #6cc644;
 }
-.button-github:hover {
-    background-color: #6cc644;
-    color: white;
-}
 
-.button-resume {
+#button-resume {
+    background: url('/images/resume-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+}
+#button-resume:hover {
     border: 2px solid #ff0000;
 }
-.button-resume:hover {
-    background-color: #ff0000;
-    color: white;
-}
 
-.button-facebook {
+#button-facebook {
+    background: url('/images/fb-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+}
+#button-facebook:hover {
     border: 2px solid #3b5998;
 }
-.button-facebook:hover {
-    background-color: #3b5998;
-    color: white;
-}
 
-.button-instagram {
-    border: 2px solid #bc2a8d;
+#button-instagram {
+    background: url('/images/instagram-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
 }
-.button-instagram:hover {
-    background-color: #bc2a8d;
-    color: white;
+#button-instagram:hover {
+    border: 2px solid #bc2a8d;
 }
 
 .aboutme{
@@ -329,13 +355,54 @@ body {
     .intro-buttons {  
         margin: auto 0;
     }
-    
+
     .intro-buttons button {
-        width: 100vw;
-        height: auto;
-        border-radius: 0;
-        padding: 10px;
-        border: 0px;
-        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 10px;
+        transition-duration: 0.4s;
+        background-color: white;
+        outline: none;
     }
+/*
+    #button-linkedin {
+        border: 2px solid #0077B5;
+    }
+    #button-linkedin:hover {
+        background-color: #0077B5;
+        color: white;
+    }
+    
+    #button-github {
+        border: 2px solid #6cc644;
+    }
+    #button-github:hover {
+        background-color: #6cc644;
+        color: white;
+    }
+    
+    #button-resume {
+        border: 2px solid #ff0000;
+    }
+    #button-resume:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+    
+    #button-facebook {
+        border: 2px solid #3b5998;
+    }
+    #button-facebook:hover {
+        background-color: #3b5998;
+        color: white;
+    }
+    
+    #button-instagram {
+        border: 2px solid #bc2a8d;
+    }
+    #button-instagram:hover {
+        background-color: #bc2a8d;
+        color: white;
+    }*/
 }
