@@ -1,0 +1,36 @@
+/*
+    bg color: #522d5b
+    Normal text: #77dd77
+    Links: #FFAF00
+*/
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
+* {
+    font-family: "Asap", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: radial-gradient(transparent, black), #5e366a; */
+    background-image: radial-gradient(
+        circle 441px at 38.42% 100%,
+        #3d0c60 0%,
+        #1c0a43 100%
+    );
+    /* box-shadow: inset 0 0 100px black; */
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    /* color: rgb(103, 212, 136); */
+    /* color: rgb(113, 192, 71); */
+    /* color: rgb(121, 202, 66); */
+    /* color: rgb(144, 217, 75); */
+    /* color: #79b320; */
+    /* color: #0cca98; */
+    color: #15d18f;
+    /* color: #70679a; */
+}

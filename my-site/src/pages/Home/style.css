@@ -1,0 +1,19 @@
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-container .intro {
+    max-width: 800px;
+}
+
+.home-container .intro p {
+    font-size: 40px;
+    text-align: center;
+}
